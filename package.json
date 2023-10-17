@@ -5,7 +5,7 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "start:": "node server-mysql.js",
+    "start:": "node app.js",
     "start:local": "node --watch server-local.js",
     "start:mongo": "node --watch server-mongodb.js",
     "test": "echo \"Error: no test specified\" && exit 1"
