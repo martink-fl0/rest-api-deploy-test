@@ -13,6 +13,8 @@ export const createApp = ({ movieModel }) => {
 
   const PORT = process.env.PORT ?? 1234
 
+  console.log("!!! Logging PORT number !!!", PORT);
+
   app.listen(PORT, () => {
     console.log(`server listening on port http://localhost:${PORT}`)
   })
