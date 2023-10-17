@@ -1,0 +1,47 @@
+### Recuperar todas las películas
+GET http://localhost:8080/movies
+
+### Recuperar una película por ID
+GET http://localhost:1234/movies/32de38e2-6c0f-11ee-9cf4-3a2862bd4441
+
+### Recuperar todas las películas por un género
+GET http://localhost:1234/movies?genre=sci-fi
+
+### Añadir una película con POST
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+  "title": "Inception",
+  "year": 2010,
+  "director": "Christopher Nolan",
+  "duration": 144,
+  "poster": "https://m.media-amazon.com/images/I/91Rc8cAmnAL._AC_UF1000,1000_QL80_.jpg",
+  "rate": 8.8,
+  "genre": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ]
+}
+
+### Probar validación del POST con datos erroneos
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+  "title": 1,
+  "year": "año como string"
+}
+
+### Actualizar una película
+PATCH http://localhost:1234/movies/d3d729ec-6773-11ee-ac6d-e9a47c800ec3
+Content-Type: application/json
+
+{
+  "year": 2023,
+  "duration": 160
+}
+
+### Borrar una pelicula mediante id
+DELETE http://localhost:1234/movies/33afe6d6-6c0f-11ee-9cf4-3a2862bd4441

@@ -1,0 +1,28 @@
+{
+  "name": "rest-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start:": "node server-mysql.js",
+    "start:local": "node --watch server-local.js",
+    "start:mongo": "node --watch server-mongodb.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cristian Bermudez Martinez",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "2.8.5",
+    "dotenv": "16.3.1",
+    "express": "4.18.2",
+    "mysql2": "3.6.1",
+    "zod": "3.22.2"
+  },
+  "devDependencies": {
+    "standard": "17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  }
+}
