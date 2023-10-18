@@ -5,6 +5,7 @@
   "main": "server-local.js",
   "type": "module",
   "scripts": {
+    "env_var_test" : "node hello.js",
     "start:": "node server-mysql.js",
     "start:local": "node --watch server-local.js",
     "start:mongo": "node --watch server-mongodb.js",
