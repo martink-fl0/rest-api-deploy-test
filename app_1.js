@@ -15,11 +15,6 @@ export const createApp = ({ movieModel }) => {
 
   console.log(new Date().toLocaleTimeString(), "!!! Logging PORT number !!!", PORT);
 
-  setInterval(function () {
-    const currentTime = new Date().toLocaleTimeString();
-    console.log(`[${currentTime}] This message will be logged every 1 second.`);
-  }, 1000);
-
   app.listen(PORT, () => {
     console.log(`server listening on port http://localhost:${PORT}`)
   })
